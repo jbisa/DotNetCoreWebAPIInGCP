@@ -1,7 +1,7 @@
 # DotNetCoreWebAPIInGCP
 
 This project is a sample REST API written in .NET Core 3.1 that can be deployed to a Kubernetes (K8s) cluster. All it contains
-is a simple healthcheck endpoint and some Swagger API documentation. I plan to build off of this project, to explore other
+is a simple healthcheck endpoint and some Swagger API documentation. I plan to build off of this project and explore other
 products and tools within GCP. You may find this useful if you want to see how to deploy a .NET Core 3.* Web API application
 via K8s!
 
