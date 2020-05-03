@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dotnetcorewebapiingcp:
+    image: ${DOCKER_REGISTRY-}dotnetcorewebapiingcp
+    build:
+      context: .
+      dockerfile: ./Dockerfile
