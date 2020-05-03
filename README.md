@@ -5,6 +5,7 @@ is a simple healthcheck endpoint and some Swagger API documentation. I plan to b
 products and tools within GCP. You may find this useful if you want to see how to deploy a .NET Core 3.* Web API application
 via K8s!
 
+This project has been deployed to GKE: http://35.229.107.191:8080/swagger
 
 ## Project Dependencies
 
