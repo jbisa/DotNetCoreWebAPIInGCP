@@ -2,6 +2,7 @@
 info:
   title: .NET Core Web API
   version: v1
+  host: api-project-14772174376.appspot.com
 paths:
   /api/HealthCheck:
     get:
