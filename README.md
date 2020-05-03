@@ -5,6 +5,7 @@ is a simple healthcheck endpoint and some Swagger API documentation. I plan to b
 products and tools within GCP. You may find this useful if you want to see how to deploy a .NET Core 3.* Web API application
 via K8s!
 
+
 ## Project Dependencies
 
 In order to run and deploy this project, make sure you have the following dependencies installed on your machine:
@@ -12,6 +13,7 @@ In order to run and deploy this project, make sure you have the following depend
 * .NET Core 3.1 => https://dotnet.microsoft.com/download/dotnet-core/3.1
 * Google Cloud SDK => https://cloud.google.com/sdk
 * Kubectl => https://kubernetes.io/docs/tasks/tools/install-kubectl/
+
 
 ## Creating a Project in GCP
 
@@ -26,6 +28,7 @@ Next, create a project with:
 Verify that the project was created with:
 
 `gcloud projects describe [YOUR-PROJECT-ID]`
+
 
 ## Building a Container From the Dockerfile
 
@@ -50,6 +53,7 @@ Logs are permanently available at [https://console.developers.google.com/logs/vi
 ID  CREATE_TIME DURATION  SOURCE                                                     IMAGES                               STATUS
 xxxxxxx-xxxx-xxx-xxx-xxxxxxxxxxxx  2017-03-04T00:42:10+00:00  1M32S     gs://YOUR-PROJECT-ID_cloudbuild/source/xxxxxxx.08.tgz  gcr.io/YOUR-PROJECT-ID/YOUR-CONTAINER-NAME  SUCCESS<
 ```
+
 
 ## Run the App in GKE
 
@@ -91,10 +95,6 @@ Your service should be spinning up! To see what the external IP is for you to ac
 
 To access your app running on GKE, open up a web browser and navigate to:
 
-`http://EXTERNAL-IP:8080/swagger`
+`http://EXTERNAL-IP:8080/swagger` or `http://EXTERNAL-IP:8080/api/healthcheck`
 
-or
-
-`http://EXTERNAL-IP:8080/api/healthcheck`
-
-Congrats you're live on GKE!!! Make sure to check your resource utilization on the GCP dashboards.
+Congrats you're live on GKE!!!
