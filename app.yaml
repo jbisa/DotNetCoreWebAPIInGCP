@@ -1,14 +1,19 @@
-﻿openapi: 3.0.1
-info:
-  title: .NET Core Web API
-  version: v1
-  host: api-project-14772174376.appspot.com
-paths:
-  /api/HealthCheck:
-    get:
-      tags:
-        - HealthCheck
-      responses:
-        '200':
-          description: Success
-components: {}
+﻿runtime: aspnetcore
+
+env: flex
+
+# This sample incurs costs to run on the App Engine flexible environment. 
+
+# The settings below are to reduce costs during testing and are not appropriate
+
+# for production use. For more information, see:
+
+# https://cloud.google.com/appengine/docs/flexible/dotnet/configuring-your-app-with-app-yaml
+
+manual_scaling:
+  instances: 1
+
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10

@@ -1,0 +1,11 @@
+﻿swagger: '2.0'
+info:
+version: v1
+title: .NET Core Web API
+host: api-project-14772174376.appspot.com
+paths:
+    /api/HealthCheck:
+get:
+    tags:
+    - HealthCheck
+    operationId: ApiHealthCheckGet
