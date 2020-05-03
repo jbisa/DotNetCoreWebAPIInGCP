@@ -1,0 +1,13 @@
+﻿openapi: 3.0.1
+info:
+  title: .NET Core Web API
+  version: v1
+paths:
+  /api/HealthCheck:
+    get:
+      tags:
+        - HealthCheck
+      responses:
+        '200':
+          description: Success
+components: {}
